@@ -27,7 +27,7 @@
         <li class="active"><a href="#">Home</a></li>
         <li><a [routerLink]="['about']">About</a></li>
         <li><a href="#">Projects</a></li>
-        <li><a [routerLink]="['contact']">Contact Us</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -40,15 +40,9 @@
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a [routerLink]="['student']">Student List</a></p>
-      <p><a [routerLink]="['register']">Student Registration</a></p>
-      <p><a [routerLink]="['searchbyname']">SearchByName</a></p>
-      <p><a [routerLink]="['registeruser']">Register User</a></p>
-       <p><a [routerLink]="['formgroup']">formgroup Register Example</a></p>
-      <p><a [routerLink]="['dropdown']">DropDown Example</a></p>reactiveform
-      <p><a [routerLink]="['reactiveform']">Reactive From With Validation</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <router-outlet></router-outlet>    
+    
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
@@ -60,8 +54,10 @@
     </div>
   </div>
 </div>
+
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
 </footer>
+
 </body>
 </html>

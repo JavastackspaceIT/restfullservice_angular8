@@ -1,0 +1,19 @@
+<p>dropdown works!</p>
+
+
+<div style="margin: auto; width: 50%; border: 3px solid green; padding: 10px;">
+
+     <select [(ngModel)]="empSelected" (ngModelChange)="onEmployeeSelected($event)">
+         <option  *ngFor="let emp of employee" [value]="emp.id">{{emp.name}}</option>
+    
+     </select>
+
+</div>
+
+<table style="border-block-color: initial">
+<tr>
+           <td >{{advisor.advisorNo}}</td> &nbsp; &nbsp; &nbsp; 
+           <td>{{advisor.name}}</td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+           <td>{{advisor.lastName}}</td>
+     </tr>
+</table>
